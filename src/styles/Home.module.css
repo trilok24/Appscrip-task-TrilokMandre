@@ -1,0 +1,78 @@
+.mainContent {
+  padding: 2rem 1rem;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.gridTitleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.gridRightControls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filterToggle {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  text-decoration: underline;
+}
+
+.sortDropdown {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.layoutWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.productArea {
+  flex: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.productArea.fullWidth {
+  flex: 1 1 100%;
+  width: 100%;
+}
+
+.productGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+@media (max-width: 768px) {
+  .layoutWrapper {
+    flex-direction: column;
+  }
+
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sortDropdown {
+    width: 100%;
+  }
+}

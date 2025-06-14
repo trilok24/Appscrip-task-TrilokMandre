@@ -1,0 +1,134 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.topbar {
+  background-color: #000000;
+  color: #f90707;
+  font-size: 12px;
+  padding: 6px 0;
+  text-align: center;
+}
+
+.utilityRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 2rem;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  flex-wrap: nowrap;
+}
+
+.engLeft {
+  flex: 1;
+  text-align: left;
+  font-weight: 600;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.iconsRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
+.lang {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 1px solid #eee;
+    z-index: 10;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .utilityRow {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 10px;
+  }
+
+  .iconsRight {
+    justify-content: center;
+  }
+}
+.discoverContainer {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.discoverTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.discoverText {
+  font-size: 16px;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.6;
+}

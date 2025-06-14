@@ -1,0 +1,133 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.topSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2rem;
+}
+
+.subscribeSection h3,
+.contactSection h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.form input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2px;
+  flex: 1;
+}
+
+.form button {
+  padding: 0.5rem 1rem;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.contactSection p,
+.contactSection small {
+  margin-bottom: 0.5rem;
+}
+
+.linksRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid #333;
+}
+
+.linkColumn,
+.followColumn {
+  min-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.linkColumn h5,
+.followColumn h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.linkColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.linkColumn li {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.socials span {
+  font-size: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.payments {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.payments img {
+  width: 40px;
+  height: auto;
+  background: #fff;
+  padding: 4px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+
+
+.bottomRow {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 12px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .topSection,
+  .linksRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form input,
+  .form button {
+    width: 100%;
+  }
+}

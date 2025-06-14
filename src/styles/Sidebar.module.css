@@ -1,0 +1,74 @@
+.sidebar {
+  width: 100%;
+  max-width: 240px;
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid #eee;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.itemCount {
+  font-size: 12px;
+  color: #222;
+}
+
+.hideBtn {
+  font-size: 12px;
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.section {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.options label {
+  font-size: 13px;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
